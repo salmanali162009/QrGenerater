@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator, Scanner &amp; Creator - QRToolsHub</title>
+<meta name="description" content="Free online QR code tools. Generate QR codes for WiFi, WhatsApp, vCard, Email, SMS, URL. Scan QR codes from camera or images. Customize colors, add logos. No sign-up required.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://qrtoolshub.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="QR Code Generator, Scanner &amp; Creator - QRToolsHub">
+<meta property="og:description" content="Generate and scan QR codes free. Create WiFi, WhatsApp, vCard, Email, SMS QR codes. Customize with colors and logos. Works in your browser.">
+<meta property="og:url" content="https://qrtoolshub.com/">
+<meta property="og:site_name" content="QRToolsHub">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QR Code Generator, Scanner &amp; Creator - QRToolsHub">
+<meta name="twitter:description" content="Free online QR code tools. Generate, scan, customize, and download QR codes. No sign-up required.">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='12' height='12' rx='2' fill='%232563eb'/%3E%3Crect x='18' y='2' width='12' height='12' rx='2' fill='%232563eb'/%3E%3Crect x='2' y='18' width='12' height='12' rx='2' fill='%232563eb'/%3E%3Crect x='18' y='18' width='5' height='5' rx='1' fill='%232563eb'/%3E%3Crect x='25' y='18' width='5' height='5' rx='1' fill='%232563eb'/%3E%3Crect x='18' y='25' width='5' height='5' rx='1' fill='%232563eb'/%3E%3C/svg%3E" type="image/svg+xml">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "QRToolsHub",
+  "url": "https://qrtoolshub.com/",
+  "description": "Free online QR code generator and scanner. Generate QR codes for text, URLs, WiFi, WhatsApp, vCard, Email, SMS. Scan with camera or image upload. Customize with colors and logos. Download as PNG or SVG.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "QRToolsHub"
+  }
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Adsterra Popunder -->
+<script src="https://pl30150274.effectivecpmnetwork.com/19/bc/c1/19bcc183cd1e1138ae50d78356ed06bd.js"></script>
+
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="header" role="banner">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="QRToolsHub home">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="2" width="12" height="12" rx="2"/>
+        <rect x="18" y="2" width="12" height="12" rx="2"/>
+        <rect x="2" y="18" width="12" height="12" rx="2"/>
+        <rect x="18" y="18" width="5" height="5" rx="1"/>
+        <rect x="25" y="18" width="5" height="5" rx="1"/>
+        <rect x="18" y="25" width="5" height="5" rx="1"/>
+      </svg>
+      QRTools<span>Hub</span>
+    </a>
+    <div class="header-right">
+      <nav class="tool-nav" aria-label="Tools" role="tablist">
+        <button class="tool-nav-btn active" data-tool="generator" role="tab" aria-selected="true" aria-controls="tool-generator" id="tab-generator" aria-current="page">Generator</button>
+        <button class="tool-nav-btn" data-tool="scanner" role="tab" aria-selected="false" aria-controls="tool-scanner" id="tab-scanner">Scanner</button>
+        <button class="tool-nav-btn" data-tool="wifi" role="tab" aria-selected="false" aria-controls="tool-wifi" id="tab-wifi">WiFi</button>
+        <button class="tool-nav-btn" data-tool="whatsapp" role="tab" aria-selected="false" aria-controls="tool-whatsapp" id="tab-whatsapp">WhatsApp</button>
+        <button class="tool-nav-btn" data-tool="vcard" role="tab" aria-selected="false" aria-controls="tool-vcard" id="tab-vcard">vCard</button>
+        <button class="tool-nav-btn" data-tool="email" role="tab" aria-selected="false" aria-controls="tool-email" id="tab-email">Email</button>
+        <button class="tool-nav-btn" data-tool="sms" role="tab" aria-selected="false" aria-controls="tool-sms" id="tab-sms">SMS</button>
+        <button class="tool-nav-btn" data-tool="url" role="tab" aria-selected="false" aria-controls="tool-url" id="tab-url">URL</button>
+        <button class="tool-nav-btn" data-tool="read" role="tab" aria-selected="false" aria-controls="tool-read" id="tab-read">From Image</button>
+        <button class="tool-nav-btn" data-tool="color" role="tab" aria-selected="false" aria-controls="tool-color" id="tab-color">Color QR</button>
+      </nav>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" class="main">
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle"></div>
+  </div>
+  <div class="container">
+    <div class="hero-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Free &bull; No sign-up &bull; Works offline
+    </div>
+    <h1>QR Code Tools.<br><span>Fast. Free. Beautiful.</span></h1>
+    <p>Generate, scan, and customize QR codes for WiFi, WhatsApp, vCards, emails, and more. Everything runs in your browser.</p>
+    <div class="hero-search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="search-icon" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search tools..." aria-label="Search tools" id="heroSearch" oninput="searchTools(this.value)">
+    </div>
+  </div>
+</section>
+
+<!-- Adsterra Native Banner -->
+<div class="ad-container" id="adContainer">
+  <div id="container-a2c45548335383462f145f45348ba4ac"></div>
+</div>
+<script async="async" data-cfasync="false" src="https://pl30150275.effectivecpmnetwork.com/a2c45548335383462f145f45348ba4ac/invoke.js"></script>
+
+<!-- ===== FEATURES SECTION ===== -->
+<section class="features-section" aria-label="Features">
+  <div class="container">
+    <div class="section-header animate-slide-up">
+      <h2>Everything you need in <span>one place</span></h2>
+      <p>No apps, no accounts, no limits. All QR tools are completely free.</p>
+    </div>
+    <div class="features-grid animate-stagger">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3" rx="1"/><rect x="19" y="14" width="3" height="3" rx="1"/><rect x="14" y="19" width="3" height="3" rx="1"/></svg>
+        </div>
+        <h3>10 QR Tools</h3>
+        <p>From basic text to WiFi, WhatsApp, vCard, Email, SMS, URL, and fully customizable color QR codes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <h3>Live Preview</h3>
+        <p>See your QR code update in real-time as you type. No waiting, no reloading.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </div>
+        <h3>Download &amp; Copy</h3>
+        <p>Download QR codes as PNG or SVG. Copy to clipboard with one click. Works on all devices.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+        </div>
+        <h3>Camera Scanner</h3>
+        <p>Scan QR codes using your device camera or upload an image. Instant decoding with jsQR.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOOLS GRID ===== -->
+<section class="tools-grid-section" aria-label="All QR tools">
+  <div class="container">
+    <div class="section-header animate-slide-up">
+      <h2>Choose a <span>tool</span></h2>
+      <p>Click any tool below to get started instantly.</p>
+    </div>
+    <div class="tools-grid animate-stagger" id="toolsGrid">
+      <a class="tool-card" href="#" data-tool="generator" onclick="switchTool('generator');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3" rx="1"/><rect x="19" y="14" width="3" height="3" rx="1"/><rect x="14" y="19" width="3" height="3" rx="1"/></svg>
+        </div>
+        <h3>QR Generator</h3>
+        <p>Convert text and URLs into QR codes. Live preview, download, and copy.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="scanner" onclick="switchTool('scanner');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <h3>QR Scanner</h3>
+        <p>Scan QR codes with your camera or upload an image. Copy or open the result.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="wifi" onclick="switchTool('wifi');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+        </div>
+        <h3>WiFi QR</h3>
+        <p>Share WiFi access instantly. Scan to connect with no password typing required.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="whatsapp" onclick="switchTool('whatsapp');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>WhatsApp QR</h3>
+        <p>Generate a QR that opens a WhatsApp chat with your pre-filled message.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="vcard" onclick="switchTool('vcard');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>vCard QR</h3>
+        <p>Create a digital business card. Scan to save a contact directly to your phone.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="email" onclick="switchTool('email');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Email QR</h3>
+        <p>Generate a QR code that opens a pre-filled email in the reader's mail app.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="sms" onclick="switchTool('sms');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>SMS QR</h3>
+        <p>Create a QR code that opens a pre-filled SMS message on the reader's phone.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="url" onclick="switchTool('url');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>URL QR</h3>
+        <p>Turn any link into a QR code. Auto-adds https:// and validates the URL.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="read" onclick="switchTool('read');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><line x1="7" y1="12" x2="17" y2="12"/></svg>
+        </div>
+        <h3>QR From Image</h3>
+        <p>Upload a screenshot or image containing a QR code and decode it instantly.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="tool-card" href="#" data-tool="color" onclick="switchTool('color');return false">
+        <div class="tool-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 22a10 10 0 0 1-10-10"/><path d="M2 12h20"/></svg>
+        </div>
+        <h3>Color QR</h3>
+        <p>Customize QR codes with colors, gradients, rounded dots, and a center logo.</p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="tool-card-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOOL SECTIONS (TABBED) ===== -->
+<div class="tool-sections-wrapper">
+
+<!-- ===== GENERATOR TOOL ===== -->
+<section id="tool-generator" class="tool-section active" role="tabpanel" aria-labelledby="tab-generator">
+  <div class="container">
+    <div class="tool-header">
+      <h1>QR Code <span>Generator</span></h1>
+      <p>Enter text or a URL below to generate a QR code with live preview.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group float">
+          <input type="text" id="qrInput" class="input" placeholder=" " autocomplete="off" spellcheck="false" autofocus maxlength="2000">
+          <label for="qrInput">Enter text or URL</label>
+          <div class="error-msg" id="genErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+          <div style="margin-top:6px;font-size:0.8rem;color:var(--text-muted)" id="charCount" aria-live="polite">0 / 2000 characters</div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6">
+          <strong>Pro tip:</strong> URLs are auto-linked. You can also generate codes for email addresses, phone numbers, and plain text.
+        </p>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="qrFrame" role="img" aria-label="QR code preview area">
+          <div class="qr-placeholder" id="qrPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="8" height="8" rx="1"/>
+              <rect x="14" y="2" width="8" height="8" rx="1"/>
+              <rect x="2" y="14" width="8" height="8" rx="1"/>
+              <rect x="14" y="14" width="3" height="3" rx="1"/>
+              <rect x="19" y="14" width="3" height="3" rx="1"/>
+              <rect x="14" y="19" width="3" height="3" rx="1"/>
+            </svg>
+            <p>Your QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="dlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="dlSvg" disabled>Download SVG</button>
+          <button class="btn btn-outline" id="copyImgBtn" disabled>Copy Image</button>
+        </div>
+      </div>
+    </div>
+    <div class="tool-tips">
+      <h3>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Tips
+      </h3>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> URLs are automatically detected and made clickable when scanned.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Keep text under 2000 characters for optimal QR readability.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Use the Copy Image button to paste the QR code directly into documents.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCANNER TOOL ===== -->
+<section id="tool-scanner" class="tool-section" role="tabpanel" aria-labelledby="tab-scanner">
+  <div class="container">
+    <div class="tool-header">
+      <h1>QR Code <span>Scanner</span></h1>
+      <p>Scan a QR code using your camera or upload an image.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group">
+          <label id="camera-label">Camera</label>
+          <div class="camera-controls">
+            <button class="btn btn-primary" id="camStart" aria-describedby="camera-label">Start Camera</button>
+            <button class="btn btn-secondary" id="camStop" disabled>Stop Camera</button>
+          </div>
+          <div class="video-wrapper">
+            <video id="scannerVideo" playsinline muted aria-label="Camera preview for QR scanning"></video>
+            <div class="video-placeholder" id="videoPlaceholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2"/>
+              </svg>
+              <p>Camera preview appears here</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="upload-label">Upload Image</label>
+          <div class="scan-area" id="scanArea" role="button" tabindex="0" aria-describedby="upload-label" aria-label="Click to upload or drag and drop an image">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            <p>Click to upload or drag &amp; drop an image</p>
+            <span class="scan-hint">PNG, JPG, WEBP</span>
+          </div>
+          <input type="file" id="scanInput" accept="image/*" hidden>
+        </div>
+        <div class="error-msg" id="scanErrorMsg" role="alert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          <span></span>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="scan-result" id="scanResult" role="region" aria-live="polite" aria-label="Scan result">
+          <div class="scan-result-placeholder" id="scanPlaceholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 7V5a2 2 0 0 1 2-2h2"/>
+              <path d="M17 3h2a2 2 0 0 1 2 2v2"/>
+              <path d="M21 17v2a2 2 0 0 1-2 2h-2"/>
+              <path d="M7 21H5a2 2 0 0 1-2-2v-2"/>
+              <line x1="7" y1="12" x2="17" y2="12"/>
+            </svg>
+            <p>Scan or upload a QR code to see the result here.</p>
+          </div>
+          <div class="scan-result-content" id="scanResultContent" hidden>
+            <div class="result-label">Decoded Content</div>
+            <div class="result-text" id="resultText"></div>
+            <div class="result-actions" id="resultActions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-tips">
+      <h3>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Tips
+      </h3>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Hold your camera steady and center the QR code in the frame.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Good lighting improves detection speed and accuracy.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> You can also drag &amp; drop an image file onto the upload area.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WIFI QR GENERATOR ===== -->
+<section id="tool-wifi" class="tool-section" role="tabpanel" aria-labelledby="tab-wifi">
+  <div class="container">
+    <div class="tool-header">
+      <h1>WiFi QR <span>Generator</span></h1>
+      <p>Generate a QR code that lets others connect to your WiFi network instantly.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group float">
+          <input type="text" id="wifiSsid" class="input" placeholder=" " autocomplete="off" spellcheck="false" maxlength="200">
+          <label for="wifiSsid">Network Name (SSID)</label>
+          <div class="error-msg" id="wifiErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+        </div>
+        <div class="form-group float">
+          <input type="text" id="wifiPass" class="input" placeholder=" " autocomplete="off" spellcheck="false" maxlength="200">
+          <label for="wifiPass">Password</label>
+        </div>
+        <div class="form-group">
+          <label for="wifiEncryption">Encryption</label>
+          <select id="wifiEncryption" class="input">
+            <option value="WPA">WPA / WPA2</option>
+            <option value="WEP">WEP</option>
+            <option value="nopass">None (Open)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="wifiHidden">
+            <span>Hidden network</span>
+          </label>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="wifiQrFrame" role="img" aria-label="WiFi QR code preview">
+          <div class="qr-placeholder" id="wifiPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/>
+            </svg>
+            <p>WiFi QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="wifiDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="wifiDlSvg" disabled>Download SVG</button>
+          <button class="btn btn-outline" id="wifiCopyImg" disabled>Copy Image</button>
+          <button class="btn btn-outline" id="wifiCopyStr" disabled>Copy WiFi String</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHATSAPP QR GENERATOR ===== -->
+<section id="tool-whatsapp" class="tool-section" role="tabpanel" aria-labelledby="tab-whatsapp">
+  <div class="container">
+    <div class="tool-header">
+      <h1>WhatsApp QR <span>Generator</span></h1>
+      <p>Generate a QR code that opens a WhatsApp chat with your pre-filled message.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-row">
+          <div class="form-group float">
+            <input type="text" id="waCountry" class="input" placeholder=" " autocomplete="off" maxlength="5" inputmode="numeric">
+            <label for="waCountry">Country Code</label>
+          </div>
+          <div class="form-group float">
+            <input type="text" id="waPhone" class="input" placeholder=" " autocomplete="off" inputmode="numeric" maxlength="20">
+            <label for="waPhone">Phone Number</label>
+          </div>
+        </div>
+        <div class="error-msg" id="waErrorMsg" role="alert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span></span>
+        </div>
+        <div class="form-group float">
+          <textarea id="waMsg" class="input textarea" placeholder=" " rows="3" maxlength="1000"></textarea>
+          <label for="waMsg">Pre-filled Message (optional)</label>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="waQrFrame" role="img" aria-label="WhatsApp QR code preview">
+          <div class="qr-placeholder" id="waPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <p>WhatsApp QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success" id="waOpen" disabled>Open WhatsApp</button>
+          <button class="btn btn-primary" id="waDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="waDlSvg" disabled>Download SVG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== vCARD QR GENERATOR ===== -->
+<section id="tool-vcard" class="tool-section" role="tabpanel" aria-labelledby="tab-vcard">
+  <div class="container">
+    <div class="tool-header">
+      <h1>vCard QR <span>Generator</span></h1>
+      <p>Generate a QR code that saves contact details directly to a phone's address book.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-row">
+          <div class="form-group float">
+            <input type="text" id="vcFname" class="input" placeholder=" " autocomplete="off" maxlength="100">
+            <label for="vcFname">First Name</label>
+          </div>
+          <div class="form-group float">
+            <input type="text" id="vcLname" class="input" placeholder=" " autocomplete="off" maxlength="100">
+            <label for="vcLname">Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group float">
+            <input type="text" id="vcCompany" class="input" placeholder=" " autocomplete="off" maxlength="200">
+            <label for="vcCompany">Company</label>
+          </div>
+          <div class="form-group float">
+            <input type="text" id="vcTitle" class="input" placeholder=" " autocomplete="off" maxlength="200">
+            <label for="vcTitle">Job Title</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group float">
+            <input type="text" id="vcPhone" class="input" placeholder=" " autocomplete="off" maxlength="30">
+            <label for="vcPhone">Phone</label>
+          </div>
+          <div class="form-group float">
+            <input type="email" id="vcEmail" class="input" placeholder=" " autocomplete="off" maxlength="200">
+            <label for="vcEmail">Email</label>
+          </div>
+        </div>
+        <div class="form-group float">
+          <input type="url" id="vcWebsite" class="input" placeholder=" " autocomplete="off" maxlength="500">
+          <label for="vcWebsite">Website</label>
+        </div>
+        <div class="form-group float">
+          <input type="text" id="vcAddress" class="input" placeholder=" " autocomplete="off" maxlength="300">
+          <label for="vcAddress">Address</label>
+        </div>
+        <div class="form-group float">
+          <textarea id="vcNotes" class="input textarea" placeholder=" " rows="3" maxlength="500"></textarea>
+          <label for="vcNotes">Notes</label>
+        </div>
+        <div class="error-msg" id="vcErrorMsg" role="alert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span></span>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="vcQrFrame" role="img" aria-label="vCard QR code preview">
+          <div class="qr-placeholder" id="vcPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <p>vCard QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="vcDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="vcDlSvg" disabled>Download SVG</button>
+          <button class="btn btn-outline" id="vcCopyStr" disabled>Copy vCard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EMAIL QR GENERATOR ===== -->
+<section id="tool-email" class="tool-section" role="tabpanel" aria-labelledby="tab-email">
+  <div class="container">
+    <div class="tool-header">
+      <h1>Email QR <span>Generator</span></h1>
+      <p>Generate a QR code that opens a pre-filled email in the reader's mail app.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group float">
+          <input type="email" id="emailTo" class="input" placeholder=" " autocomplete="off" maxlength="200">
+          <label for="emailTo">Email Address</label>
+          <div class="error-msg" id="emailErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+        </div>
+        <div class="form-group float">
+          <input type="text" id="emailSubject" class="input" placeholder=" " autocomplete="off" maxlength="200">
+          <label for="emailSubject">Subject</label>
+        </div>
+        <div class="form-group float">
+          <textarea id="emailBody" class="input textarea" placeholder=" " rows="4" maxlength="2000"></textarea>
+          <label for="emailBody">Message</label>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="emailQrFrame" role="img" aria-label="Email QR code preview">
+          <div class="qr-placeholder" id="emailPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <p>Email QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="emailDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="emailDlSvg" disabled>Download SVG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SMS QR GENERATOR ===== -->
+<section id="tool-sms" class="tool-section" role="tabpanel" aria-labelledby="tab-sms">
+  <div class="container">
+    <div class="tool-header">
+      <h1>SMS QR <span>Generator</span></h1>
+      <p>Generate a QR code that opens a pre-filled SMS message on the reader's phone.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group float">
+          <input type="text" id="smsPhone" class="input" placeholder=" " autocomplete="off" inputmode="tel" maxlength="30">
+          <label for="smsPhone">Phone Number</label>
+          <div class="error-msg" id="smsErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+        </div>
+        <div class="form-group float">
+          <textarea id="smsMsg" class="input textarea" placeholder=" " rows="4" maxlength="2000"></textarea>
+          <label for="smsMsg">SMS Message</label>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="smsQrFrame" role="img" aria-label="SMS QR code preview">
+          <div class="qr-placeholder" id="smsPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <p>SMS QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="smsDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="smsDlSvg" disabled>Download SVG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== URL QR GENERATOR ===== -->
+<section id="tool-url" class="tool-section" role="tabpanel" aria-labelledby="tab-url">
+  <div class="container">
+    <div class="tool-header">
+      <h1>URL QR <span>Generator</span></h1>
+      <p>Convert any URL into a QR code. Auto-adds https:// if missing.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group float">
+          <input type="url" id="urlInput" class="input" placeholder=" " autocomplete="off" spellcheck="false" maxlength="2000">
+          <label for="urlInput">Enter URL</label>
+          <div class="error-msg" id="urlErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="urlQrFrame" role="img" aria-label="URL QR code preview">
+          <div class="qr-placeholder" id="urlPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <p>URL QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="urlDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="urlDlSvg" disabled>Download SVG</button>
+          <button class="btn btn-outline" id="urlCopyStr" disabled>Copy URL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QR FROM IMAGE ===== -->
+<section id="tool-read" class="tool-section" role="tabpanel" aria-labelledby="tab-read">
+  <div class="container">
+    <div class="tool-header">
+      <h1>QR From <span>Image</span></h1>
+      <p>Upload an image containing a QR code to decode its content.</p>
+    </div>
+    <div class="tool-layout">
+      <div class="card">
+        <div class="form-group">
+          <label id="read-label">Upload Image</label>
+          <div class="scan-area" id="readArea" role="button" tabindex="0" aria-describedby="read-label" aria-label="Click to upload or drag and drop an image">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            <p>Click to upload or drag &amp; drop a QR code image</p>
+            <span class="scan-hint">PNG, JPG, WEBP</span>
+          </div>
+          <input type="file" id="readInput" accept="image/*" hidden>
+        </div>
+        <div class="error-msg" id="readErrorMsg" role="alert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          <span></span>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="scan-result" id="readResult" role="region" aria-live="polite" aria-label="Decoded QR result">
+          <div class="scan-result-placeholder" id="readPlaceholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3" rx="1"/><rect x="19" y="14" width="3" height="3" rx="1"/><rect x="14" y="19" width="3" height="3" rx="1"/>
+            </svg>
+            <p>Upload a QR code image to see the decoded content here.</p>
+          </div>
+          <div class="scan-result-content" id="readResultContent" hidden>
+            <div class="result-label">Decoded Content</div>
+            <div class="result-text" id="readResultText"></div>
+            <div class="result-actions" id="readResultActions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COLOR QR GENERATOR ===== -->
+<section id="tool-color" class="tool-section" role="tabpanel" aria-labelledby="tab-color">
+  <div class="container">
+    <div class="tool-header">
+      <h1>Color QR <span>Generator</span></h1>
+      <p>Customize your QR code with colors, gradients, rounded dots, and a center logo.</p>
+    </div>
+    <div class="tool-layout tool-layout-wide">
+      <div class="card">
+        <div class="form-group float">
+          <input type="text" id="colorInput" class="input" placeholder=" " autocomplete="off" spellcheck="false" maxlength="2000">
+          <label for="colorInput">Text or URL</label>
+          <div class="error-msg" id="colorErrorMsg" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span></span>
+          </div>
+        </div>
+        <div class="form-row form-row-4">
+          <div class="form-group">
+            <label for="colorFg">Foreground</label>
+            <div class="color-picker-wrap">
+              <input type="color" id="colorFg" value="#000000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="colorBg">Background</label>
+            <div class="color-picker-wrap">
+              <input type="color" id="colorBg" value="#ffffff">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="colorEcl">Error Correction</label>
+            <select id="colorEcl" class="input">
+              <option value="L">Low (L)</option>
+              <option value="M" selected>Medium (M)</option>
+              <option value="Q">Quartile (Q)</option>
+              <option value="H">High (H)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="colorSize">Size</label>
+            <select id="colorSize" class="input">
+              <option value="200">200px</option>
+              <option value="280" selected>280px</option>
+              <option value="360">360px</option>
+              <option value="440">440px</option>
+              <option value="520">520px</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row form-row-4">
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="colorGradient">
+              <span>Gradient</span>
+            </label>
+          </div>
+          <div class="form-group" id="colorGradientEndWrap" style="display:none">
+            <label for="colorGradientEnd">Gradient End</label>
+            <div class="color-picker-wrap">
+              <input type="color" id="colorGradientEnd" value="#2563eb">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="colorRoundedDots">
+              <span>Rounded dots</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="colorRoundedCorners">
+              <span>Rounded corners</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row form-row-3">
+          <div class="form-group">
+            <label for="colorMargin">Margin (quiet zone)</label>
+            <select id="colorMargin" class="input">
+              <option value="0">0 modules</option>
+              <option value="1">1 module</option>
+              <option value="2" selected>2 modules</option>
+              <option value="3">3 modules</option>
+              <option value="4">4 modules</option>
+            </select>
+          </div>
+          <div class="logo-upload-row">
+            <div class="form-group">
+              <label for="colorLogo">Center Logo</label>
+              <input type="file" id="colorLogo" accept="image/*" class="input">
+            </div>
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button class="btn btn-outline" id="colorLogoClear" disabled>Clear Logo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qr-output">
+        <div class="qr-frame" id="colorQrFrame" role="img" aria-label="Color QR code preview">
+          <div class="qr-placeholder" id="colorPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="2"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 22a10 10 0 0 1-10-10"/><path d="M2 12h20"/>
+            </svg>
+            <p>Customized QR code will appear here</p>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="colorDlPng" disabled>Download PNG</button>
+          <button class="btn btn-secondary" id="colorDlSvg" disabled>Download SVG</button>
+          <button class="btn btn-outline" id="colorCopyImg" disabled>Copy Image</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- .tool-sections-wrapper -->
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="why-section" aria-label="Why choose us">
+  <div class="container">
+    <div class="section-header animate-slide-up">
+      <h2>Why <span>QRToolsHub</span></h2>
+      <p>Thousands of people trust us for fast, reliable QR code generation.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3" rx="1"/><rect x="19" y="14" width="3" height="3" rx="1"/><rect x="14" y="19" width="3" height="3" rx="1"/></svg>
+        </div>
+        <div>
+          <h3>100% Free</h3>
+          <p>No hidden charges, no premium plans. Every tool is completely free to use forever.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </div>
+        <div>
+          <h3>Works Offline</h3>
+          <p>Once loaded, all QR generation happens in your browser. No data is sent to any server.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3>Privacy First</h3>
+          <p>Your data never leaves your device. No tracking, no storage, no third-party access.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <h3>Lightning Fast</h3>
+          <p>Live preview updates in milliseconds. No page reloads, no waiting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section" aria-label="Testimonials">
+  <div class="container">
+    <div class="section-header animate-slide-up">
+      <h2>Loved by <span>users</span></h2>
+      <p>Hear what people say about QRToolsHub.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"I use the WiFi QR generator every day for my coffee shop. Customers love scanning to connect instead of typing a long password."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-role">Coffee Shop Owner</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"The color QR generator with logo is perfect for my business cards. It looks so professional and stands out from traditional QR codes."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Marcus J.</div>
+            <div class="testimonial-role">Marketing Consultant</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"I use the vCard QR on my resume. Recruiters scan it and instantly have all my contact details saved. Game changer for networking."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Aisha R.</div>
+            <div class="testimonial-role">Software Developer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="section-header animate-slide-up">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <p>Quick answers to the most common questions.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Are QR codes generated on this site stored or tracked?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">No. All QR codes are generated entirely in your browser using JavaScript. Your data never leaves your device. We don't store, track, or transmit any information you enter.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I use the generated QR codes for commercial purposes?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. All QR codes generated on QRToolsHub are yours to use for any purpose, including commercial use. There are no restrictions or attribution requirements.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do the QR codes expire? How long do they last?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">QR codes are static images that never expire. Once generated, they last forever. The code encodes the data directly &mdash; there's no server involved. As long as the QR image remains readable, it will work.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is the difference between PNG and SVG download?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">PNG is a raster image format &mdash; good for most uses but can become blurry when scaled up. SVG is a vector format that looks sharp at any size, making it ideal for printing, logos, and high-resolution displays.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do I need an internet connection to use the QR tools?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">After the initial page load, most tools work fully offline. The QR generation library runs entirely in your browser. Camera scanning requires a device camera but no internet connection.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Start creating QR codes</h2>
+      <p>No sign-up. No downloads. Just fast, beautiful QR codes in your browser.</p>
+      <a href="#" class="cta-btn" onclick="switchTool('generator');return false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3" rx="1"/><rect x="19" y="14" width="3" height="3" rx="1"/><rect x="14" y="19" width="3" height="3" rx="1"/></svg>
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="QRToolsHub home">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="12" height="12" rx="2"/><rect x="18" y="2" width="12" height="12" rx="2"/><rect x="2" y="18" width="12" height="12" rx="2"/><rect x="18" y="18" width="5" height="5" rx="1"/><rect x="25" y="18" width="5" height="5" rx="1"/><rect x="18" y="25" width="5" height="5" rx="1"/>
+          </svg>
+          QRTools<span>Hub</span>
+        </a>
+        <p>Free online QR code tools for everyone. Generate, scan, and customize QR codes in your browser with no sign-up required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <a href="#" onclick="switchTool('generator');return false">QR Generator</a>
+        <a href="#" onclick="switchTool('scanner');return false">QR Scanner</a>
+        <a href="#" onclick="switchTool('wifi');return false">WiFi QR</a>
+        <a href="#" onclick="switchTool('whatsapp');return false">WhatsApp QR</a>
+        <a href="#" onclick="switchTool('vcard');return false">vCard QR</a>
+      </div>
+      <div class="footer-col">
+        <h4>More Tools</h4>
+        <a href="#" onclick="switchTool('email');return false">Email QR</a>
+        <a href="#" onclick="switchTool('sms');return false">SMS QR</a>
+        <a href="#" onclick="switchTool('url');return false">URL QR</a>
+        <a href="#" onclick="switchTool('read');return false">QR From Image</a>
+        <a href="#" onclick="switchTool('color');return false">Color QR</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#" onclick="toggleFaq(document.querySelector('.faq-item').querySelector('.faq-question'));return false">FAQ</a>
+        <a href="mailto:support@qrtoolshub.com">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 QRToolsHub. All rights reserved.</span>
+      <span>Made with &hearts; for the QR community.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js" defer></script>
+<script src="js/main.js" defer></script>
+
+<script>
+// Ad position: move to active tool's result
+function moveAdToActiveTool() {
+  var ad = document.getElementById('adContainer');
+  var active = document.querySelector('.tool-section.active .qr-output');
+  if (ad && active) {
+    var target = active.parentNode;
+    if (target && target.nextElementSibling !== ad) {
+      target.parentNode.insertBefore(ad, target.nextSibling);
+    }
+  }
+}
+document.querySelector('.tool-nav').addEventListener('click', function() {
+  setTimeout(moveAdToActiveTool, 50);
+});
+moveAdToActiveTool();
+
+// Tool switch helper (for non-JS-module elements like tool cards, CTA, footer links)
+function switchTool(tool) {
+  var btn = document.querySelector('.tool-nav-btn[data-tool="' + tool + '"]');
+  if (btn) btn.click();
+  document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// FAQ toggle
+function toggleFaq(btn) {
+  var item = btn.closest('.faq-item');
+  if (!item) return;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+  if (!isOpen) item.classList.add('open');
+}
+
+// Hero search - filter tool cards
+function searchTools(query) {
+  var cards = document.querySelectorAll('.tool-card');
+  var q = query.toLowerCase().trim();
+  cards.forEach(function(card) {
+    var text = card.textContent.toLowerCase();
+    card.style.display = (!q || text.indexOf(q) !== -1) ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
